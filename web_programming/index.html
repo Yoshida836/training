@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- head:webサイトの裏設定を記入する場所 -->
-     <!-- Ctl + 「/」でコメント化 -->
+    <!-- Ctl + 「/」でコメント化 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>初のWebサイト作成</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- linkで他のファイルと接続 -->
 </head>
+
 <body>
-    <!-- body:実際にユーザーの目に触れる部分 -->
-    <h1>これは練習ページです</h1>
-    <!-- h2やh3の見出しもある -->
-    <p>はじめてのホームページ作りです。まずはHTMLがいるの中身を編集してwebサイトを作成します。その後、CSSデザインを学んで、javascriptでプログラミングを成業します。</p>
-    <!-- pは文章 -->
-    <a href="https://github.com/">自分のGitHUbページはこちらです</a>
-    <!-- aは別ページへの誘導 -->
-    <!-- 水色は補足情報-ページのURLとか、もう一つオプションが必要な場合＝属性 -->
-    <!-- hrefはaの属性値 -->
-    <img src="cat.png" alt="猫の画像">
-    <!-- imgは画像　srcで画像ファイル/altで属性を補足 -->
-          
+    <div class="inner">
+        <!-- body:実際にユーザーの目に触れる部分 -->
+        <h1>これは練習ページです</h1>
+        <!-- h2やh3の見出しもある -->
+        <!-- hは隣にものを置かない -->
+        <!-- 命令ごとに置くかどうかに差がある -->
+        <p>はじめてのホームページ作りです。まずはHTMLがいるの中身を編集してwebサイトを作成します。その後、CSSデザインを学んで、javascriptでプログラミングを成業します。</p>
+        <!-- pは文章 -->
+        <a href="https://github.com/">自分のGitHUbページはこちらです</a>
+
+        <!-- aは別ページへの誘導 -->
+        <!-- 水色は補足情報-ページのURLとか、もう一つオプションが必要な場合＝属性 -->
+        <!-- hrefはaの属性値 -->
+        <br>
+        <br>
+        <br>
+        <!-- alt + shift + Fで自動改行 -->
+        <p>↓は猫の写真です♪</p>
+
+        <img src="cat.png" alt="猫の画像">
+        <!-- imgは画像　srcで画像ファイル/altで属性を補足 -->
+    </div>
 </body>
+
 </html>

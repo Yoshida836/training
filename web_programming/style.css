@@ -1,0 +1,31 @@
+h1{
+    /* htmlの変えたい部分に変更を加える */
+    color: gray;
+    /* cで文字の色変える */
+    text-align: center;
+    /* text-alignで文字の位置 */
+    font-size: 64px;
+    /* font-sizeで文字の大きさ */
+}
+
+img{
+    width: 640px;
+    /* wで横幅 */
+    height: 640px;
+    /* hで縦幅 */
+    object-fit: cover;
+    /* 画像の比率の自動調整 */
+    /* 一区切りごとに； */
+}
+
+.inner{
+    max-width: 800px;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    background: white;
+}
+
+body{
+    background: gray;
+}
