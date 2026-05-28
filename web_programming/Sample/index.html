@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>グループタグとid・class</title>
+    <!-- グループタグ：ウェブサイトのリンクの名前 -->
+     <!-- id=mainやdiv等で区分けしきれなかった時のさらなる識別方法 -->
+      <!-- classも同様 -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ファイル作っていなくてもctrl+クリックすると、新しくファイルを作ってくれる -->
+</head>
+
+<body>
+    <header>
+        <!-- ウェブサイトのヘッダー(タイトル的な)を指定できる -->
+        <h1>キッズロボ</h1>
+        <p id="welcomeMessage"></p>
+        <img src="img/student.jpg" alt="学習の様子">
+        <!-- img/student.jpg=imgファイルのstudent.jpgの写真を指名している -->
+        <!-- ※ファイル名を右クリック→open with five serverをクリックで、ウェブサイトの状態を確認できる -->
+    </header>
+    <main>
+        <!-- メインの文章、その範囲を指定できる -->
+        <h2>伸びる3つの能力</h2>
+        <div id="blue">
+            <h3 class="emp">思考力</h3>
+            <p>得られた知識をもとに筋道を立てて考える</p>
+            <div id ="staras" date="5"></div>        
+        </div>
+        <!-- mainの中で、さらに区分け -->
+        <div id="pink">
+            <h3 class="emp">判断力</h3>
+            <p>情報を吟味し、適切なものを選択できる</p>
+            <div id="staras" date="4"></div>
+        </div>
+        <div id="yellow">
+            <h3 class="emp">表現力</h3>
+            <p>自分の考えを他者に分かりやすく伝える</p>
+            <div id="staras" date="3"></div>
+        </div>
+    </main>
+    <footer>
+        <!-- フッダーの範囲を指定できる -->
+        <h2>申し込み</h2>
+        <p>申し込みは<a href="">こちらから</a></p>
+    </footer>
+    <!-- ※Alt;Shift+Fで自動整列-visual studio codeのみ -->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
