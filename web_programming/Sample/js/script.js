@@ -25,16 +25,16 @@ if (hour >= 18) {
     message.textContent = "おはよう！"
 }
 
-let starEle1 = document.getElementById("staras1");
+let starEle1 = document.getElementById("stars1");
 
 for (let i = 0; i < 3; i++) {
-//for=繰り返し変数
-//forには３つの情報を指定
-//①カウント専用の変数：「i = 0」-適当な「i」に初期値は０-「i」以外でもいい-でも「i」がセオリー
-//②カウント専用の変数がどうなるまで繰り返しなのか：「i < 3」の間は繰り返す(0,1,2で★3つ)
-//③カウント専用の変数がどのようにカウントされるのか決める：「i++」-「++」は指定した変数を１増やす
+    //for=繰り返し変数
+    //forには３つの情報を指定
+    //①カウント専用の変数：「i = 0」-適当な「i」に初期値は０-「i」以外でもいい-でも「i」がセオリー
+    //②カウント専用の変数がどうなるまで繰り返しなのか：「i < 3」の間は繰り返す(0,1,2で★3つ)
+    //③カウント専用の変数がどのようにカウントされるのか決める：「i++」-「++」は指定した変数を１増やす
     let addCnt = document.createElement("span");
-    addCnt.textContent = "★";
+    addCnt.textContent = "☆";
     //spanというタグを生成し、そのテキストの中身★とする
     starEle1.appendChild(addCnt);
     //特定しておいた場所starEle1に生成したspan(★)を足す
