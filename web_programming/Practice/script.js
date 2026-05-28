@@ -5,4 +5,3 @@ let name = "Yoshida";
 
 console.log("Hello!");
 console.log(name);
-// console.logでウェbサイトのコンソールに通知を送れる
