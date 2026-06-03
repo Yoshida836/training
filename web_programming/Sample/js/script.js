@@ -44,6 +44,56 @@ for (let i = 0; i < 3; i++) {
 
 
 // 大事な記号知識！！！
-//本格的なプログラミング(java script等)での等号記号は「==」：　a==b　※「===」も同じ
-//「=」は代入の役割：a = b　→　bの結果をaに入れる
-//前に「!」つけると、意味を反転させる： a != 5 →　a=5ではない。
+//本格的なプログラミング(java script等)での等号記号は「==」：a==b※「===」も同じ
+//「=」は代入の役割：a = b →bの結果をaに入れる
+//前に「!」つけると、意味を反転させる： a != 5 → a=5 ではない。
+
+
+const canvas = document.getElementById('myCanvas');
+// Canvas要素を取得
+// 要素の取得の際、「document」が主流-myCanvasタグがdocumentにあるという意味
+// const=一回入れた変数を変更不可↔let=一回入れた変数を変更可能
+// ★javascriptの関数も、スクラッチにある関数とガチ同じ使い方
+
+const ctx = canvas.getContext('2d');
+// 2D描画コンテキストを取得
+
+function drawCanvasText(text) {
+    // Canvasにテキストを描写する関数を作成します！
+    // ★function ○○○○(自作なわけだから、名前も既存のにかぶらなければ自由) で自作関数を作れる
+    // ★(text)で、変数drawCanvasTextが実行するプログラムを指定＝引数
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    //   Canvasをクリア
+
+    ctx.font = '30px Arial';
+    // フォントスタイルを設定
+    ctx.fillStyle = '#333';
+    // テキストの色を設定
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    // テキストを中央ぞろえに
+    ctx.fillText(text, canvas.width / 2, canvas.height / 2);
+    // テキストの描画(テキストの内容, X座標, y座標)
+}
+
+drawCanvasText("今日の目標はコレ！");
+// ページ読み込み時にCanvasに初期メッセージを描画
+// 関数/メソッドの実行
+// drawCanvasTextはオリジナル関数-funcction以降の塊が自作パート
+
+const updateButton = document.getElementById('updateCanvasText');
+// updateButtonという関数を出す
+updateButton.addEventListener('click', () => {
+// addEventListener('click', ボタンがクリックされた時の処理
+    const messages = [
+        "新しいことに挑戦しよう！",
+        "一歩ずつ進もう！",
+        "楽しく学習しよう！",
+        "諦めずに頑張ろう！",
+        "プログラミングは楽しい！"
+    ];
+    const randomIndex = Math.floor(Math.random() * messages.length);
+    drawCanvasText(messages[randomIndex]);
+});
+    // 例としてランダムなメッセージを表示
+
